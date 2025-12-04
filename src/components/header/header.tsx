@@ -1,5 +1,6 @@
-import { Calendar, Heart, LogOut, User } from "lucide-react";
+import { LogOut, User } from "lucide-react";
 import { Button } from "../ui/button";
+import Image from "next/image";
 
 export const Header = () => {
   return (
@@ -8,24 +9,23 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="relative">
-              <Heart className="w-8 h-8 text-primary fill-primary" />
-              <Calendar className="w-4 h-4 text-accent absolute -bottom-0.5 -right-0.5" />
+              <Image alt="Logo" src="/logo.png" width={50} height={50} />
             </div>
-            <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent inline-block">
+            <h1 className="text-1xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent inline-block">
               My Forever Dates
             </h1>
           </div>
 
           <div className="flex items-center gap-2">
             <Button
-              variant="ghost"
+              variant="link"
               size="icon"
               className="rounded-2xl hover:bg-destructive/10 hover:text-destructive"
             >
               <User className="w-5 h-5" />
             </Button>
             <Button
-              variant="ghost"
+              variant="link"
               size="icon"
               className="rounded-2xl hover:bg-destructive/10 hover:text-destructive"
               //   onClick={() => navigate("/login")}
