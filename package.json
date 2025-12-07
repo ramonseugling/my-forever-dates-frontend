@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write ."
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",
@@ -29,6 +30,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.0.6",
+    "prettier": "^3.7.4",
     "typescript": "^5"
   }
 }

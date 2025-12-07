@@ -28,9 +28,21 @@
     --input: 340 35% 92%;
     --ring: 340 75% 68%;
     --radius: 1rem;
-    --gradient-warm: linear-gradient(135deg, hsl(340, 75%, 68%), hsl(25, 85%, 65%));
-    --gradient-sunset: linear-gradient(135deg, hsl(0, 70%, 65%), hsl(280, 65%, 70%));
-    --gradient-soft: linear-gradient(180deg, hsl(20, 55%, 98%), hsl(340, 45%, 96%));
+    --gradient-warm: linear-gradient(
+      135deg,
+      hsl(340, 75%, 68%),
+      hsl(25, 85%, 65%)
+    );
+    --gradient-sunset: linear-gradient(
+      135deg,
+      hsl(0, 70%, 65%),
+      hsl(280, 65%, 70%)
+    );
+    --gradient-soft: linear-gradient(
+      180deg,
+      hsl(20, 55%, 98%),
+      hsl(340, 45%, 96%)
+    );
     --shadow-soft: 0 4px 20px hsla(340, 75%, 68%, 0.15);
     --shadow-glow: 0 0 30px hsla(340, 75%, 68%, 0.2);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -92,23 +104,23 @@
   .gradient-warm {
     background: var(--gradient-warm);
   }
-  
+
   .gradient-sunset {
     background: var(--gradient-sunset);
   }
-  
+
   .gradient-soft {
     background: var(--gradient-soft);
   }
-  
+
   .shadow-soft {
     box-shadow: var(--shadow-soft);
   }
-  
+
   .shadow-glow {
     box-shadow: var(--shadow-glow);
   }
-  
+
   .transition-smooth {
     transition: var(--transition-smooth);
   }
