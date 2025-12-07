@@ -9,7 +9,7 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="relative">
-              <Image alt="Logo" src="/logo.png" width={50} height={50} />
+              <Image alt="Logo" src="/logo.webp" width={50} height={50} />
             </div>
             <h1 className="text-1xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent inline-block">
               My Forever Dates
